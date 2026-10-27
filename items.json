@@ -1,0 +1,34 @@
+[
+  {
+    "id": "estanteria",
+    "nombre": "Estantería",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["estanteria.jpeg"]
+  },
+  {
+    "id": "mesa-larga",
+    "nombre": "Mesa larga",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["mesa_larga.jpeg"]
+  },
+  {
+    "id": "mesa-redonda",
+    "nombre": "Mesa redonda",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["mesa_redonda.jpeg"]
+  },
+  {
+    "id": "mueble-aparador",
+    "nombre": "Mueble aparador",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["mueble_aparador.jpeg"]
+  }
+]
