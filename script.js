@@ -24,6 +24,28 @@ async function loadCatalog() {
       image.loading = 'lazy';
       photoLink.append(image);
 
+      const gallery = document.createElement('div');
+      gallery.className = 'gallery';
+      if (item.imagenes.length > 1) {
+        for (const [index, path] of item.imagenes.entries()) {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.setAttribute('aria-label', `Ver foto ${index + 1} de ${item.nombre}`);
+          button.setAttribute('aria-pressed', String(index === 0));
+          const thumbnail = document.createElement('img');
+          thumbnail.src = path;
+          thumbnail.alt = '';
+          thumbnail.loading = 'lazy';
+          button.append(thumbnail);
+          button.addEventListener('click', () => {
+            image.src = path;
+            photoLink.href = path;
+            for (const sibling of gallery.children) sibling.setAttribute('aria-pressed', String(sibling === button));
+          });
+          gallery.append(button);
+        }
+      }
+
       const content = document.createElement('div');
       content.className = 'card-content';
       const status = document.createElement('span');
@@ -49,7 +71,7 @@ async function loadCatalog() {
         contact.textContent = 'Consultar por WhatsApp ↗';
         content.append(contact);
       }
-      card.append(photoLink, content);
+      card.append(photoLink, gallery, content);
       catalog.append(card);
     }
     document.querySelector('#item-count').textContent = `${items.length} artículos`;

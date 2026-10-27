@@ -22,6 +22,12 @@ h2 { font-size: 22px; margin: 0; letter-spacing: -.04em; }
 .photo-link { display: block; background: #e9e7df; overflow: hidden; }
 .photo-link img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; transition: transform .25s; }
 .photo-link:hover img { transform: scale(1.025); }
+.gallery { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 16px 0; }
+.gallery:empty { display: none; }
+.gallery button { padding: 2px; border: 2px solid transparent; border-radius: 6px; background: transparent; cursor: pointer; }
+.gallery button[aria-pressed="true"] { border-color: #304e3d; }
+.gallery img { display: block; width: 52px; height: 44px; object-fit: cover; border-radius: 3px; }
+.gallery button:focus-visible { outline: 3px solid #cf754d; outline-offset: 2px; }
 .card-content { padding: 26px; }
 .status { display: inline-block; border-radius: 20px; background: #eaf0e5; color: #46613b; padding: 5px 10px; font-size: 11px; font-weight: 600; }
 .status.reservado { background: #fff0d5; color: #805811; }

@@ -5,7 +5,7 @@
     "descripcion": "Consultanos por medidas y detalles.",
     "precio": null,
     "estado": "disponible",
-    "imagenes": ["estanteria.jpeg"]
+    "imagenes": ["estanteria/estanteria.jpeg", "estanteria/IMG_0444.jpg"]
   },
   {
     "id": "mesa-larga",
@@ -13,7 +13,7 @@
     "descripcion": "Consultanos por medidas y detalles.",
     "precio": null,
     "estado": "disponible",
-    "imagenes": ["mesa_larga.jpeg"]
+    "imagenes": ["mesa_larga_escritorio/mesa_larga.jpeg"]
   },
   {
     "id": "mesa-redonda",
@@ -21,7 +21,7 @@
     "descripcion": "Consultanos por medidas y detalles.",
     "precio": null,
     "estado": "disponible",
-    "imagenes": ["mesa_redonda.jpeg"]
+    "imagenes": ["mesa_redonda/mesa_redonda.jpeg", "mesa_redonda/IMG_0425.jpg", "mesa_redonda/IMG_0427.jpg", "mesa_redonda/IMG_0428.jpg"]
   },
   {
     "id": "mueble-aparador",
@@ -29,6 +29,38 @@
     "descripcion": "Consultanos por medidas y detalles.",
     "precio": null,
     "estado": "disponible",
-    "imagenes": ["mueble_aparador.jpeg"]
+    "imagenes": ["aparador/mueble_aparador.jpeg", "aparador/IMG_0441.jpg", "aparador/IMG_0442.jpg", "aparador/IMG_0443.jpg", "aparador/36ed75ce-acb1-4fad-b4cf-57f02d563032.JPG"]
+  },
+  {
+    "id": "heladera",
+    "nombre": "Heladera",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["heladera/da03bffe-5eda-4908-9b77-7a8aef91aa0e.JPG", "heladera/IMG_0416.jpg", "heladera/IMG_0417.jpg", "heladera/IMG_0418.jpg"]
+  },
+  {
+    "id": "microondas",
+    "nombre": "Microondas",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["microondas/IMG_0420.jpg", "microondas/IMG_0421.jpg", "microondas/IMG_0422.jpg"]
+  },
+  {
+    "id": "monitor",
+    "nombre": "Monitor",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["monitor/IMG_0437.jpg", "monitor/IMG_0438.jpg", "monitor/IMG_0439.jpg", "monitor/IMG_0440.jpg"]
+  },
+  {
+    "id": "televisor",
+    "nombre": "Televisor",
+    "descripcion": "Consultanos por medidas y detalles.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["televisor/televisor.jpg", "televisor/IMG_0453.jpg", "televisor/IMG_0454.jpg", "televisor/IMG_0455.jpg", "televisor/IMG_0456.jpg"]
   }
 ]
