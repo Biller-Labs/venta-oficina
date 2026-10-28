@@ -2,15 +2,15 @@
   {
     "id": "estanteria",
     "nombre": "Estantería",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["estanteria/estanteria.jpeg", "estanteria/IMG_0444.jpg"]
   },
   {
     "id": "mesa-larga",
-    "nombre": "Mesa larga",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "nombre": "Escritorio largo",
+    "descripcion": "",
     "precio": null,
     "estado": "disponible",
     "imagenes": ["mesa_larga_escritorio/mesa_larga.jpeg"]
@@ -18,7 +18,7 @@
   {
     "id": "mesa-redonda",
     "nombre": "Mesa redonda",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
     "estado": "disponible",
     "imagenes": ["mesa_redonda/mesa_redonda.jpeg", "mesa_redonda/IMG_0425.jpg", "mesa_redonda/IMG_0427.jpg", "mesa_redonda/IMG_0428.jpg"]
@@ -26,31 +26,31 @@
   {
     "id": "mueble-aparador",
     "nombre": "Mueble aparador",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["aparador/mueble_aparador.jpeg", "aparador/IMG_0441.jpg", "aparador/IMG_0442.jpg", "aparador/IMG_0443.jpg", "aparador/36ed75ce-acb1-4fad-b4cf-57f02d563032.JPG"]
   },
   {
     "id": "heladera",
     "nombre": "Heladera",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["heladera/da03bffe-5eda-4908-9b77-7a8aef91aa0e.JPG", "heladera/IMG_0416.jpg", "heladera/IMG_0417.jpg", "heladera/IMG_0418.jpg"]
   },
   {
     "id": "microondas",
     "nombre": "Microondas",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["microondas/IMG_0420.jpg", "microondas/IMG_0421.jpg", "microondas/IMG_0422.jpg"]
   },
   {
     "id": "monitor",
     "nombre": "Monitor",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
     "estado": "disponible",
     "imagenes": ["monitor/IMG_0437.jpg", "monitor/IMG_0438.jpg", "monitor/IMG_0439.jpg", "monitor/IMG_0440.jpg"]
@@ -58,9 +58,97 @@
   {
     "id": "televisor",
     "nombre": "Televisor",
-    "descripcion": "Consultanos por medidas y detalles.",
+    "descripcion": "",
     "precio": null,
     "estado": "disponible",
     "imagenes": ["televisor/televisor.jpg", "televisor/IMG_0453.jpg", "televisor/IMG_0454.jpg", "televisor/IMG_0455.jpg", "televisor/IMG_0456.jpg"]
+  },
+  {
+    "id": "cafetera-smartlife",
+    "nombre": "Cafetera Smartlife",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["cafetera_smartlife/IMG_0467 2.jpg"]
+  },
+  {
+    "id": "jarra-electrica",
+    "nombre": "Jarra eléctrica",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["jarra_electrica/IMG_0479.jpg"]
+  },
+  {
+    "id": "jbl-charge-4-blanco",
+    "nombre": "JBL Charge 4 blanco",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["jbl_charge_4_blanco/IMG_0495.jpg", "jbl_charge_4_blanco/IMG_0496.jpg", "jbl_charge_4_blanco/84B686C0-D5A0-4700-BE47-AFAB4EF0501E.PNG"]
+  },
+  {
+    "id": "jbl-charge-4-gris",
+    "nombre": "JBL Charge 4 gris",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["jbl_charge_4_gris/IMG_0493.jpg", "jbl_charge_4_gris/IMG_0494.jpg"]
+  },
+  {
+    "id": "licuadora-smartlife",
+    "nombre": "Licuadora Smartlife",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["licuadora_smartlife/IMG_0478.jpg"]
+  },
+  {
+    "id": "jbl-flip-4-gris",
+    "nombre": "JBL Flip 4 gris",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["jbl_flip_4_gris/IMG_0497.jpg", "jbl_flip_4_gris/IMG_0498.jpg"]
+  },
+  {
+    "id": "teclado-logitech-mk270",
+    "nombre": "Teclado Logitech MK270",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["teclado_logitech_mk270/IMG_0504.jpg"]
+  },
+  {
+    "id": "teclado-logitech-comfort",
+    "nombre": "Teclado Logitech Comfort",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["teclado_logitech_comfort/IMG_0503.jpg"]
+  },
+  {
+    "id": "teclado-sonitec",
+    "nombre": "Teclado Sonitec",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["teclado_sonitec/IMG_0502.jpg"]
+  },
+  {
+    "id": "monitor-curvo",
+    "nombre": "Monitor curvo",
+    "descripcion": "Modelo: LC24F390FHLXZB.",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["monitor_curvo/IMG_0500.jpg", "monitor_curvo/IMG_0501.jpg"]
+  },
+  {
+    "id": "teclado-kolke",
+    "nombre": "Teclado Kolke",
+    "descripcion": "",
+    "precio": null,
+    "estado": "disponible",
+    "imagenes": ["teclado_kolke/IMG_0505.jpg"]
   }
 ]

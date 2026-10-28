@@ -5,7 +5,7 @@
 body { margin: 0; }
 a { color: inherit; }
 .hero, main, footer { width: min(1120px, calc(100% - 48px)); margin: auto; }
-.hero { padding: 84px 0 56px; }
+.hero { padding: 48px 0 32px; }
 .eyebrow { font-size: 11px; letter-spacing: .17em; font-weight: 700; }
 h1, h2, h3 { font-family: Manrope, sans-serif; }
 h1 { font-size: clamp(40px, 7vw, 78px); letter-spacing: -.065em; line-height: 1.1; margin: 22px 0; }
@@ -17,28 +17,42 @@ main { border-top: 1px solid #d9ddd3; padding-top: 30px; padding-bottom: 64px; }
 .section-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
 h2 { font-size: 22px; margin: 0; letter-spacing: -.04em; }
 #item-count { color: #68726a; font-size: 13px; }
-.catalog { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.search-field { margin-bottom: 24px; }
+.search-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; }
+.search-field input { width: 100%; max-width: 480px; padding: 12px 14px; border: 1px solid #cbd1c5; border-radius: 8px; background: #fffefa; color: inherit; font: inherit; }
+.search-field input:focus-visible { outline: 2px solid #304e3d; outline-offset: 2px; }
+.catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .card { background: #fffefa; border: 1px solid #e5e5dc; border-radius: 16px; overflow: hidden; }
-.photo-link { display: block; background: #e9e7df; overflow: hidden; }
-.photo-link img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: contain; transition: transform .25s; }
+.photo-link { display: block; width: 100%; padding: 0; border: 0; background: #e9e7df; overflow: hidden; cursor: zoom-in; }
+.photo-link:focus-visible { outline: 3px solid #cf754d; outline-offset: -3px; }
+.photo-open { overflow: hidden; }
+.photo-dialog { width: min(1100px, calc(100% - 32px)); max-height: calc(100dvh - 32px); padding: 54px 12px 12px; border: 0; border-radius: 12px; background: #fffefa; }
+.photo-dialog::backdrop { background: rgb(0 0 0 / 75%); }
+.photo-dialog > img { display: block; width: 100%; max-height: calc(100dvh - 110px); object-fit: contain; }
+.close-photo { position: absolute; top: 10px; right: 12px; padding: 8px 14px; border: 0; border-radius: 6px; background: #304e3d; color: white; font: inherit; cursor: pointer; }
+.close-photo:focus-visible { outline: 3px solid #cf754d; outline-offset: 2px; }
+.photo-link img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: contain; transition: transform .25s; }
 .photo-link:hover img { transform: scale(1.025); }
 .gallery { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 16px 0; }
 .gallery:empty { display: none; }
 .gallery button { padding: 2px; border: 2px solid transparent; border-radius: 6px; background: transparent; cursor: pointer; }
 .gallery button[aria-pressed="true"] { border-color: #304e3d; }
-.gallery img { display: block; width: 52px; height: 44px; object-fit: cover; border-radius: 3px; }
+.gallery img { display: block; width: 38px; height: 32px; object-fit: cover; border-radius: 3px; }
 .gallery button:focus-visible { outline: 3px solid #cf754d; outline-offset: 2px; }
-.card-content { padding: 26px; }
+.card-content { padding: 18px; }
 .status { display: inline-block; border-radius: 20px; background: #eaf0e5; color: #46613b; padding: 5px 10px; font-size: 11px; font-weight: 600; }
 .status.reservado { background: #fff0d5; color: #805811; }
 .status.vendido { background: #eee; color: #656565; }
-h3 { font-size: 25px; letter-spacing: -.04em; margin: 14px 0 8px; }
+h3 { font-size: 21px; letter-spacing: -.04em; margin: 12px 0 6px; }
 .description { color: #73796f; font-size: 14px; line-height: 1.6; margin: 0; }
-.price { font-size: 20px; font-weight: 600; margin: 24px 0 20px; }
+.price { font-size: 18px; font-weight: 600; margin: 16px 0; }
 .contact { display: block; text-align: center; background: #304e3d; color: white; text-decoration: none; padding: 14px 10px; border-radius: 8px; font-size: 14px; font-weight: 500; }
 .contact:hover { background: #203e2d; }
 a:focus-visible { outline: 3px solid #cf754d; outline-offset: 4px; }
 footer { border-top: 1px solid #d9ddd3; padding: 26px 0 36px; display: flex; justify-content: space-between; gap: 20px; font-size: 12px; color: #68726a; }
+@media (min-width: 601px) and (max-width: 900px) {
+  .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 600px) {
   .hero, main, footer { width: calc(100% - 32px); }
   .hero { padding: 52px 0 36px; }

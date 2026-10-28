@@ -14,10 +14,10 @@ Abrí http://localhost:8000. No abras `index.html` directamente: el catálogo ca
 
 ## Editar artículos
 
-Editá `items.json`. Cada artículo tiene un identificador único, nombre, descripción, precio, estado y una lista de rutas de fotos. Se muestra la primera foto y miniaturas para elegir las demás; al hacer clic en la foto principal se abre en tamaño completo.
+Editá `items.json`. Cada artículo tiene un identificador único, nombre, descripción, precio, estado y una lista de rutas de fotos. Se muestra la primera foto y miniaturas para elegir las demás; al hacer clic en la foto principal se abre una vista ampliada sin salir del catálogo. Cerrala con el botón “Cerrar”, la tecla Escape o haciendo clic fuera del cuadro.
 
 - `precio`: número en USD (por ejemplo, `80`), o `null` para mostrar “Consultar precio”.
-- `estado`: `disponible`, `reservado` o `vendido`. Los vendidos no tienen botón de consulta.
+- `estado`: `disponible`, `reservado` o `vendido`. Los vendidos se ocultan del catálogo.
 - `imagenes`: ruta relativa de la foto, respetando mayúsculas y extensión.
 
 Las fotos están organizadas en una carpeta por artículo. Usá rutas como `monitor/IMG_0437.jpg`. Los originales HEIC quedan en tu computadora y están excluidos de Git, al igual que los archivos `.DS_Store`. Para nuevas fotos HEIC, convertí a JPEG antes de agregarlas al catálogo (máximo recomendado: 1600 píxeles en el lado más largo).
