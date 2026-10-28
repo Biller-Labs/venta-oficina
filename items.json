@@ -11,7 +11,8 @@
     "id": "mesa-larga",
     "nombre": "Escritorio largo",
     "descripcion": "",
-    "precio": null,
+    "precio": 6000,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["mesa_larga_escritorio/mesa_larga.jpeg"]
   },
@@ -49,17 +50,19 @@
   },
   {
     "id": "monitor",
-    "nombre": "Monitor",
-    "descripcion": "",
-    "precio": null,
+    "nombre": "Monitor plano",
+    "descripcion": "Modelo: LG 27 UL500-W.",
+    "precio": 6000,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["monitor/IMG_0437.jpg", "monitor/IMG_0438.jpg", "monitor/IMG_0439.jpg", "monitor/IMG_0440.jpg"]
   },
   {
     "id": "televisor",
-    "nombre": "Televisor",
-    "descripcion": "",
-    "precio": null,
+    "nombre": "Televisor 43'",
+    "descripcion": "Marca Panavox, modelo JMM59.",
+    "precio": 5000,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["televisor/televisor.jpg", "televisor/IMG_0453.jpg", "televisor/IMG_0454.jpg", "televisor/IMG_0455.jpg", "televisor/IMG_0456.jpg"]
   },
@@ -67,7 +70,8 @@
     "id": "cafetera-smartlife",
     "nombre": "Cafetera Smartlife",
     "descripcion": "",
-    "precio": null,
+    "precio": 800,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["cafetera_smartlife/IMG_0467 2.jpg"]
   },
@@ -75,7 +79,8 @@
     "id": "jarra-electrica",
     "nombre": "Jarra eléctrica",
     "descripcion": "",
-    "precio": null,
+    "precio": 500,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["jarra_electrica/IMG_0479.jpg"]
   },
@@ -99,7 +104,8 @@
     "id": "licuadora-smartlife",
     "nombre": "Licuadora Smartlife",
     "descripcion": "",
-    "precio": null,
+    "precio": 1000,
+    "moneda": "UYU",
     "estado": "disponible",
     "imagenes": ["licuadora_smartlife/IMG_0478.jpg"]
   },
@@ -139,9 +145,10 @@
     "id": "monitor-curvo",
     "nombre": "Monitor curvo",
     "descripcion": "Modelo: LC24F390FHLXZB.",
-    "precio": null,
+    "precio": 4000,
+    "moneda": "UYU",
     "estado": "disponible",
-    "imagenes": ["monitor_curvo/IMG_0500.jpg", "monitor_curvo/IMG_0501.jpg"]
+    "imagenes": ["monitor_curvo/IMG_0501.jpg", "monitor_curvo/IMG_0500.jpg"]
   },
   {
     "id": "teclado-kolke",
@@ -150,5 +157,14 @@
     "precio": null,
     "estado": "disponible",
     "imagenes": ["teclado_kolke/IMG_0505.jpg"]
+  },
+  {
+    "id": "telefono",
+    "nombre": "Teléfono",
+    "descripcion": "",
+    "precio": 1000,
+    "moneda": "UYU",
+    "estado": "disponible",
+    "imagenes": ["telefono/IMG_0508.jpg"]
   }
 ]

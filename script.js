@@ -32,6 +32,7 @@ async function loadCatalog() {
     const items = await response.json();
     const catalog = document.querySelector('#catalog');
     const search = document.querySelector('#search');
+    const sort = document.querySelector('#sort');
     const normalize = (text) => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const searchableCards = [];
 
@@ -89,7 +90,7 @@ async function loadCatalog() {
       description.textContent = item.descripcion;
       const price = document.createElement('p');
       price.className = 'price';
-      price.textContent = typeof item.precio === 'number' ? `USD ${currency.format(item.precio)}` : '';
+      price.textContent = typeof item.precio === 'number' ? `${item.moneda || 'USD'} ${currency.format(item.precio)}` : '';
       content.append(status, title);
       if (item.descripcion.trim()) content.append(description);
       if (typeof item.precio === 'number') content.append(price);
@@ -106,7 +107,7 @@ async function loadCatalog() {
       }
       card.append(photoLink, gallery, content);
       catalog.append(card);
-      searchableCards.push({ card, text: normalize(`${item.nombre} ${item.descripcion}`) });
+      searchableCards.push({ card, price: item.precio, text: normalize(`${item.nombre} ${item.descripcion}`) });
     }
     const filterCatalog = () => {
       const terms = normalize(search.value).trim().split(/\s+/).filter(Boolean);
@@ -119,6 +120,19 @@ async function loadCatalog() {
       message.hidden = count > 0;
     };
     search.disabled = false;
+    const sortCatalog = () => {
+      searchableCards.sort((a, b) => {
+        const aPriced = typeof a.price === 'number';
+        const bPriced = typeof b.price === 'number';
+        if (aPriced !== bPriced) return aPriced ? -1 : 1;
+        if (!aPriced) return 0;
+        return sort.value === 'asc' ? a.price - b.price : b.price - a.price;
+      });
+      for (const { card } of searchableCards) catalog.append(card);
+    };
+    sort.disabled = false;
+    sort.addEventListener('change', sortCatalog);
+    sortCatalog();
     search.addEventListener('input', filterCatalog);
     filterCatalog();
   } catch (error) {

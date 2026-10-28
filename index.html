@@ -16,9 +16,18 @@
       <p>Muebles en busca de su próximo espacio.</p>
     </header>
     <main>
+      <div class="catalog-toolbar">
       <div class="search-field">
         <label for="search">Buscar artículos</label>
         <input id="search" type="search" placeholder="Ej.: mesa, monitor, heladera…" autocomplete="off" aria-controls="catalog" disabled>
+      </div>
+      <div class="sort-field">
+        <label for="sort">Ordenar por precio</label>
+        <select id="sort" aria-controls="catalog" disabled>
+          <option value="desc">Mayor a menor</option>
+          <option value="asc">Menor a mayor</option>
+        </select>
+      </div>
       </div>
       <p id="message" role="status">Cargando artículos…</p>
       <div id="catalog" class="catalog"></div>
