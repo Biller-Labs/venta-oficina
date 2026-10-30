@@ -54,7 +54,7 @@
     "descripcion": "Modelo: LG 27 UL500-W.",
     "precio": 6000,
     "moneda": "UYU",
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["monitor/IMG_0437.jpg", "monitor/IMG_0438.jpg", "monitor/IMG_0439.jpg", "monitor/IMG_0440.jpg"]
   },
   {
@@ -81,7 +81,7 @@
     "descripcion": "",
     "precio": 500,
     "moneda": "UYU",
-    "estado": "disponible",
+    "estado": "vendido",
     "imagenes": ["jarra_electrica/IMG_0479.jpg"]
   },
   {
